@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     box-shadow: 0px 6px 8px 2px rgba(151,149,149,0.75);
     img {
         height: 24px;
@@ -21,19 +21,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-weight: 300;
     background-color: rgb(234, 234, 234);
+    .fa-solid {
+        padding-right: 20px;
+    }
 }
 .sub-title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 35px;
     background-color: rgb(247, 247, 247);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     h1 {
         font-size: 22px;
         font-weight: 500;
@@ -46,13 +49,31 @@
         font-weight: 300;
         text-align: center;
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         color: rgb(87, 87, 87);
+    }
+    button {
+        background: rgb(255,121,218);
+        background: linear-gradient(169deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 81%, rgba(147,86,220,1) 100%);
+        padding: 15px 20px;
+        border-radius: 40px;
+        border: none;
+        color: white;
+        box-shadow: 7px 7px 9px 0px rgba(182,182,182,0.75);
     }
 }
 main {
     .main__fonc {
-        margin-top: 20px;
+        margin-top: 50px;
+        .fonc__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                width: 90%;
+            }
+        }
         .card__fonc_wrapper {
             display: flex;
             flex-direction: column;
@@ -60,21 +81,71 @@ main {
             justify-content: center;
             .card__fonctionnement {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                padding: 15px;
-                margin-top: 10px;
+                height: 65px;
+                margin-top: 20px;
                 background-color: rgb(247, 247, 247);
                 border-radius: 20px;
                 width: 90%;
+                box-shadow: 3px 5px 4px 0px rgba(154,154,154,0.75);
+                .fa-solid {
+                    margin-left: 25px;
+                    color: rgb(154, 154, 154);
+                }
+                .fonc__text {
+                    margin-left: 25px;
+                }
+            }
+            .card__fonctionnement:hover {
+                background-color: rgb(245, 237, 254);
+                .fa-solid {
+                    color: #9356DC;
+                }
+            }
+            .card__fonctionnement::before {
+                content: "";
+                background-color: #9356DC;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: relative;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                left: -5px;
+            }
+            #cardFonc1::before {
+                content: "1";
+            }
+            #cardFonc2::before {
+                content: "2";
+            }
+            #cardFonc3::before {
+                content: "3";
             }
         } 
     }
     .main__restau {
         margin-top: 30px;
         background-color: rgb(247, 247, 247);
-    }
-    img {
-        max-width: 150px;
+        .restaurant__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .card__restaurant {
+                width: 90%;
+                background-color: white;
+                margin-bottom: 30px;
+                figure {
+                    img {
+                        height: 170px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
