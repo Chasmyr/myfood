@@ -110,21 +110,24 @@
     padding: 10px;
     border-radius: 15px;
     box-shadow: 3px 6px 10px rgba(0,0,0,0.2);
-    h3 {
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 5px;
-    }
-    span {
-        font-weight: 300;
-        font-size: 16px;
-    }
-    .to__wrap {
-        display: inline-block;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 90%;
+    display: flex;
+    .card__text {
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        span {
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .to__wrap {
+            display: inline-block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 90%;
+        }
     }
     .price {
         float: right;
