@@ -47,12 +47,15 @@ $tertiary: #99E2D0;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
-.entrees__card__container, .plats__card__container, .desserts__card__container {
-    animation-name: apparition;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+@for $i from 1 through 4 {
+    .card-#{$i} {
+        animation-duration: .2s + $i/2;
+        animation-name: apparition;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
 }
+
 
 @keyframes fillBg {
 
