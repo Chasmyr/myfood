@@ -213,6 +213,7 @@ main {
             width: 90%;
             margin: 15px 0;
             font-family: 'Shrikhand', cursive;
+            font-weight: 300;
         }
     }
     .footer__list {
@@ -238,12 +239,4 @@ main {
             }
         }
     }
-}
-.loader {
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    background-color: green;
-    z-index: 3;
-    display: none;
 }
