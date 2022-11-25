@@ -205,6 +205,7 @@
         grid-template-columns: repeat(2, 50%);
         grid-gap: 15px;
         justify-items: center;
+        align-items: start;
         .menu__title {
             grid-row: 1;
             grid-column: 1/3;

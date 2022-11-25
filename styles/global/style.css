@@ -450,6 +450,9 @@ main .main__restau .restaurant__wrapper .card__restaurant #restaurant4 {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
+  main .main__restau .restaurant__wrapper .card__restaurant .restaurant__img {
+    height: 250px;
+  }
   .footer .footer__title {
     padding-left: 50px;
   }

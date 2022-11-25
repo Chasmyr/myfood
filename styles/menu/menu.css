@@ -289,6 +289,9 @@
         grid-template-columns: repeat(2, 50%);
     grid-gap: 15px;
     justify-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .menu__main .menu__title {
     -ms-grid-row: 1;
