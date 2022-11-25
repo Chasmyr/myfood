@@ -31,16 +31,16 @@
     height: 240px;
 }
 #menuImg1 {
-    background-image: url('./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+    background-image: url('../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
 }
 #menuImg2 {
-    background-image: url('./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+    background-image: url('../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
 }
 #menuImg3 {
-    background-image: url('./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+    background-image: url('../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
 }
 #menuImg4 {
-    background-image: url('./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+    background-image: url('../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
 }
 .menu__main {
     background-color: rgb(247, 247, 247);
@@ -151,6 +151,7 @@
         background: linear-gradient(169deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 81%, rgba(147,86,220,1) 100%);
         padding: 15px 40px;
         border-radius: 40px;
+        cursor: pointer;
         border: none;
         color: white;
         box-shadow: 7px 7px 9px 0px rgba(182,182,182,0.75);
@@ -192,5 +193,77 @@
                 color: white;
             }
         }
+    }
+}
+
+// media querries, utiliser la range pour les faires fonctionner par exemple @media (300px <= width <= 600px)
+// 425 768 1024 1440
+@media screen and (min-width: 768px) {
+    .menu__main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 15px;
+        justify-items: center;
+        .menu__title {
+            grid-row: 1;
+            grid-column: 1/3;
+            width: 100%;
+            h1 {
+                margin-left: 20px;
+            }
+        }
+        .menu__plats {
+            margin-top: 0;
+        }
+        .menu__desserts {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .menu__cta {
+            grid-row: 4;
+            grid-column: 1/3;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .menu__main {
+        .menu__cta {
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .menu__main {
+        grid-template-columns: repeat(3, 32%);
+        .menu__title {
+            grid-column: 1/4;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .menu__cta {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            grid-row: 3;
+            grid-column: 1/4;
+        }
+    }
+    .footer {
+        .footer__title {
+            padding-left: 50px;
+            h3 {
+                width: 100%;
+            }
+        }
+        .footer__list {
+            padding-left: 50px;
+            li {
+                width: 100%;
+            }
+        }
+        
     }
 }
